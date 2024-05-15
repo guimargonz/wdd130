@@ -40,14 +40,20 @@ aside {
     width: 20rem;
     text-align: center;
     position: relative;
+
 }
 
 aside img {
     width: 200px;
     height: auto;
-    position:relative
 }
 
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+    color: red;
+}
 
 footer {
     margin-top: 15px;
@@ -63,12 +69,5 @@ footer {
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #eee;
     color: #333;
-    position: relative;
 }
 
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
-    color: white;
-}
