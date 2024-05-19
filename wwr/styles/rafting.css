@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Poetsen+One&family=Rowdies:wght@300;400;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Rowdies:wght@300;400;700&display=swap');
 
 :root {
     --primary-color: #E2C782ff;
@@ -21,6 +21,7 @@ body{
     padding: 20px;
     color: var(--secondary-color);
     background-color: var(--accent1-color);
+    margin: 0 auto;
 
 }
 
@@ -29,7 +30,14 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
+header img {
+    max-width: 150px;
+}
 header {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     background-color: var(--accent1-color);
 }
@@ -42,6 +50,7 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -72,7 +81,7 @@ nav a:hover {
 
 .hero h1{
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
     text-align: center;
 }
@@ -93,6 +102,25 @@ article img {
 
 section {
     margin-top: 50px;
+    font-size: 20px;
+    max-width: 100%;
+
+}
+
+
+
+.pictures{
+    max-width: 1500vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.adventure img {
+    max-width: 200px;
 }
 
 footer {
@@ -100,10 +128,15 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+
 }
 
 footer p {
     margin: 0;
+    justify-content: end;
 }
 
 footer img {
